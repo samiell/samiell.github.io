@@ -1,23 +1,4 @@
-/* =================================================================== */
-/* 
-/*  Puremedia v1.0 Base Stylesheet
-/*  url:styleshout.com
-/*  10-09-2014
-/*
-/*  ------------------------------------------------------------------ 
-  
-    TOC: 
-    a. Reset
-    b. Basic Setup Styles
-    c. Typography  
-    d. Media
-    e. Grid
-    f. MISC
-  
-/* =================================================================== */
 
-/* 
-/* a. Reset - normalize.css v3.0.1 | MIT License | git.io/normalize
 /* =================================================================== */
 html {
 	font-family: sans-serif;
