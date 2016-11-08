@@ -1,0 +1,42 @@
+<font size ="6">Lateral-Directional Static Stability</font>
+
+<form name = "lat_stat" id = "calculator" METHOD = "GET" ACTION = "latstability.php">
+<table><tr><td>
+<table id = "calculusZone" border = "0" valign="top">
+
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td></tr>
+<tr><td  class = "calculusText">Wing Sweep Angle ( WSA ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/wsa.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "wsangle" value = "<?php echo $_SESSION['wsangle']; ?>"></td></tr>
+<tr><td class = "calculusText">Wing Root Chord ( WRC ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/wrc.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "wrchord" value = "<?php echo $_SESSION['wrchord']; ?>"></td></tr>
+<tr><td class = "calculusText">Wing Tip Chord ( WTC ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/wtc.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "wtchord" value = "<?php echo $_SESSION['wtchord']; ?>"></td></tr>
+<tr><td  class = "calculusText">Wing Span ( b ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/b.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "wspan" value = "<?php echo $_SESSION['wspan']; ?>"></td></tr>
+<tr><td  class = "calculusText">Wing Area ( S ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/S.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "warea" value = "<?php echo $_SESSION['warea']; ?>"></td></tr>
+
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td></tr>
+<tr><td>V. Tail Area ( Sv ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/Sv.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "vtarea" value = "<?php echo $_SESSION['vtarea']; ?>"></td></tr>
+<tr><td>V. Tail Moment Arm ( VLt ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/VLt.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "vtmoment" value = "<?php echo $_SESSION['vtmoment']; ?>"></td></tr>
+<tr><td>V. Tail Lift Curve Slope ( VLS ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/vls.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "vls" value = "<?php echo $_SESSION['vls']; ?>"></td></tr>
+
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td></tr>
+<tr><td>Fuselage Width ( FW ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/fw.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "fusewidth" value = "<?php echo $_SESSION['fusewidth']; ?>"></td></tr>
+<tr><td>Fuselage Length ( FL ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/fl.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "flength" value = "<?php echo $_SESSION['flength']; ?>"></td></tr>
+
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td>
+<tr><td>Roll Angle ( RA ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/ra.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "rangle" value = "<?php echo $_SESSION['rangle']; ?>"></td></tr>
+<tr><td>Dihedral Angle ( DA ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/da.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "dangle" value = "<?php echo $_SESSION['dangle']; ?>"></td></tr>
+
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td>
+
+<tr><td>Aircraft Weight ( Mg ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/w.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "weight" value = "<?php echo $_SESSION['weight']; ?>"></td></tr>
+<tr><td>Air Density ( D_Air ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/d.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "density" value = "<?php echo $_SESSION['density']; ?>"></td></tr>
+<tr><td>Aircraft Velocity ( V ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/v.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "velocity" value = "<?php echo $_SESSION['velocity']; ?>"></td></tr>
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td>
+
+</tr></table>
+<td valign="top">&nbsp;<img id = "pagepicture" src = "images/makeshift.jpg" width = "400px" height = "296px"><br><br>
+<center><font color = "red"><b>*<u>NOTE:</u></b></font> Enter same units for all input variables. Use either <br>
+<font color="blue"><b><i>English Unit</i></b></font>  or <font color="blue"><b><i>S.I Unit</i></b></font> for all inputs.<br><br>* Input variables involving angles should be in <b><i>radians</i></b>.<br > * Air Density input should be entered <br>corresponding with the <b><i>altitude</i></b> of the aircraft.<br>
+<br>* The aircraft is in straight and level flight.</center>
+<br><input type = "submit"  value ="" style = "width:195px;height:56px;background : url(images/calculate.png) center no-repeat;-moz-border-radius: 10px;-webkit-border-radius-:10px;float:right;"></td>
+</tr>
+</table>
+</form>

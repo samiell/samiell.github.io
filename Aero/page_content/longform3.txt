@@ -1,0 +1,41 @@
+<br>
+<center><form name = "long_stat2" id = "calculator" METHOD = "GET" ACTION = "longstability.php">
+<table id = "calculusZone" border = "0">
+<tr><td valign = "bottom"><hr style = " height:3px;background-color:black;""></td><td valign = "bottom"><hr style = " height:3px;background-color:black;"></td><td valign = "bottom"><hr style = " height:3px;background-color:black;"></td></tr>
+<tr><td  class = "calculusText"></td><td><select class="calculationBox" style="background-color:#84B7D5;"><option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEIGHT</option><option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VOLUME</option></select></td><td><center>MOMENT ARM</center></td></tr>
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td><td><hr style = " height:3px;background-color:black;"></td></tr>
+
+<tr><td  class = "calculusText">Fuselage:</td>
+<td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox" onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name =  "fusemass" value = "<?php echo $_SESSION['fusemass']; ?>"></td>
+<td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name = "fusearm" value = "<?php echo $_SESSION['fusearm']; ?>"></td></tr>
+
+<tr><td  class = "calculusText">Engine:</td><td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name = "engmass" value = "<?php echo $_SESSION['engmass']; ?>"></td>
+<td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name="engarm" value = "<?php echo $_SESSION['engarm']; ?>"></td></tr>
+
+<tr><td  class = "calculusText">Fuel:</td><td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name="fmass" value = "<?php echo $_SESSION['fmass']; ?>"></td><td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name="farm" value = "<?php echo $_SESSION['farm']; ?>"></td></tr>
+
+<tr><td  class = "calculusText">Tail:</td><td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name="tmass" value = "<?php echo $_SESSION['tmass']; ?>"></td><td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name="tarm" value = "<?php echo $_SESSION['tarm']; ?>"></td></tr>
+
+<tr><td  class = "calculusText">Wing:</td><td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name="wmass" value = "<?php echo $_SESSION['wmass']; ?>"></td><td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name="warm" value = "<?php echo $_SESSION['warm']; ?>"></td></tr>
+
+<tr><td  class = "calculusText">Landing Gear:</td><td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name="lgmass" value = "<?php echo $_SESSION['lgmass']; ?>"></td>
+<td style = "padding : 5px 5px 5px 5px;"><input class = "calculationBox"  onFocus = "this.style.backgroundColor = '#5F0';" onblur="this.style.backgroundColor = 'white';" type = "text" size = "50px" name="lgarm" value = "<?php echo $_SESSION['lgarm']; ?>"></td></tr>
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td>
+<td><hr style = " height:3px;background-color:black;"></td></tr></table>
+
+<center>
+<div class="footer_text"><font color = "red"><b><br>*<u>NOTE:</u></b></font>The Datum Point is taken from the leading edge of the mean aerodynamic chord. Positive direction is aft of aircraft.<center> Enter same units for all input variables. Use either 
+
+<font color="blue"><b><i>English Unit</i></b></font>  or <font color="blue"><b><i>S.I Unit</i></b></font> for all inputs.</center>
+</div>
+ </center>  
+
+<br>
+<center><input type="Submit" value ="" style = "width:195px;height:56px;background : url(images/calculate.png) center no-repeat;-moz-border-radius: 10px;-webkit-border-radius-:10px;"></button></center>
+
+</form>
+</center>
+
+
+
+

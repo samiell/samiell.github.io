@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<script>
+
+function changeImage()
+{
+
+if(document.getElementById("sideImage").src = "1.jpg")
+{
+document.getElementById("sideImage").src = "4.jpg"
+timer()
+}
+
+if(document.getElementById("sideImage").src = "4.jpg")
+{
+document.getElementById("sideImage").src = "1.jpg"
+timer()
+}
+
+}
+
+function timer()
+{
+var t = setTimeout("changeImage()",3000)
+}
+
+</script>
+
+<title>w@eva</title>
+</head>
+
+<body onload = "timer()">
+
+<img id = "sideImage" src = "1.jpg" >
+
+</body>
+</html>

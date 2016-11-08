@@ -1,0 +1,17 @@
+<center><table border="0"><tr><td>
+<font color="#d17b02" style="font-size:18px"><h2>Contact US</h2></font><l<center><font style="font-size:18px" color="#FFFFFF">For any assistance with R/C World Aviation Calculator <br>please send us a mail below<br><br></font></center>
+
+<form name="contact" id="contact us" method="post" action="contact.php">
+<table border="0"><tr><td align="right" valign="top"><font color="#F05"><b>*</b></font>&nbsp;<font color="#d17b02">Name:</font></td><td><input name="name" id="contact_input" width="180px" onblur="validateForm_name()" ></td></tr>
+       <tr><td align="right" valign="top"><font color="#F05"><b>*</b></font>&nbsp;<font color="#d17b02">E-mail:</font></td><td><input name="email" id="contact_input" onblur="validateForm_email()" ></td></tr>
+    <tr><td align="right" valign="top"><font color="#F05"><b>*</b></font>&nbsp;<font color="#d17b02">Subject:</font></td><td><input name="subject" id="contact_input" onblur= "validateForm_subject()" ></td></tr><tr><td><br></td></tr>
+     <tr><td align="right" valign="top"><font color="#F05"><b>*</b></font>&nbsp;<font color="#d17b02">Message:</font></td><td><textarea name="message" id="contact_input2" onblur="validateForm_message()" ></textarea></td></tr><tr><td><br></td></tr>
+     <tr><td><font color="#F05"><b>* required field</b></font></td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="submit" value="Submit" onclick="validateForm()"><input type="reset" id="reset" value="Reset"></td></tr>
+</table><br>
+</form></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><font color="#d17b02" style="font-size:18px"><h2>About US</h2></font>
+<font color="#FFFFFF">
+<p> R/C World Aviation Calculator is a free online <br> stability calculator that tests stability about <br>the three axes of the aircraft. These are the<br> longitudinal, lateral and directional axes.</p>
+<p> <font color="#F05"><b>Warning:</b></font> This stability calculator is protected<br> by copyright laws and international treaties.<br> Unauthorized reproduction or distribution of <br>this program, or any portion of it, may result in <br>severe civil and criminal penalties, and will be <br>prosecuted to the maximum extent possible<br> under law. You can e-mail us to obtain the <br>necessary permission and any other relevant <br>information about this program.</p><br>
+<p>Developed by KNUST Aerospace Engineering<br> Undergraduate Junior Year Students. <br><br><br><font color="#d17b02"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright &copy; 2012.</font></p>
+</font></td></tr></table></center>

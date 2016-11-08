@@ -1,0 +1,34 @@
+&nbsp;&nbsp;&nbsp;<font size = "6">NEUTRAL POINT</font>
+<br>  
+<form name = "long_stat" id = "calculator" METHOD = "GET" ACTION = "longstability.php">
+<table><tr><td>
+<table id = "calculusZone" border = "0">
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td></tr>
+<tr><td  class = "calculusText">Mean Aerodynamic Chord (C):</td><td><input class = "calculationBox" type = "text" size = "50px" onFocus = "getElementById('pagepicture').src = 'images/mac.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "mac"  id="mac" value = "<?php echo $_SESSION['mac']; ?>"></td></tr>
+<tr><td  class = "calculusText">Wing Lift Curve Slope ( WLS ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/wls.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "wls" value = "<?php echo $_SESSION['wls']; ?>"> </td></tr>
+<tr><td  class = "calculusText">Wing Sweep Angle ( WSA ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/wsa.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';"  name = "wsangle" value = "<?php echo $_SESSION['wsangle']; ?>"></td></tr>
+<tr><td class = "calculusText">Wing Root Chord ( WRC ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/wrc.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "wrchord" value = "<?php echo $_SESSION['wrchord']; ?>"></td></tr>
+<tr><td class = "calculusText">Wing Tip Chord ( WTC ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/wtc.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "wtchord" value = "<?php echo $_SESSION['wtchord']; ?>"></td></tr>
+<tr><td  class = "calculusText">Wing Span ( b ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/b.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "wspan" value = "<?php echo $_SESSION['wspan']; ?>"> </td></tr>
+<tr><td  class = "calculusText">Wing Area ( S ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/S.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "warea" value = "<?php echo $_SESSION['warea']; ?>"></td></tr><tr><td  class = "calculusText">Wing Type :</td><td><select onFocus = "getElementById('pagepicture').src = 'images/wtype.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" class = "calculationBox" name="wtype"><option>Rectangular</option><option >Elliptic</option>
+<option >Delta</option><option>Parabolic</option></select></td></tr>
+
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td></tr>
+<tr><td>Tail Type :</td><td><select onFocus = "getElementById('pagepicture').src = 'images/ttype.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" class = "calculationBox" name="ttype"><option>Standard</option><option >Low</option>
+<option >T-Tail</option></select></td></tr>
+<tr><td>Tail Moment Arm ( Lt ):</td><td><input id = "textbox1" class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/Lt.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "tmoment" value = "<?php echo $_SESSION['tmoment']; ?>"></td></tr><tr><td>Horizontal Tail Area ( St ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/St.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "htarea" value = "<?php echo $_SESSION['htarea']; ?>"></td></tr>
+<tr><td>Tail Lift Curve Slope ( TLS ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/tls.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "tls" value = "<?php echo $_SESSION['tls']; ?>" ></td></tr>
+
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td></tr>
+<tr><td>Fuselage Width ( FW ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/fw.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "fusewidth" value = "<?php echo $_SESSION['fusewidth']; ?>"></td></tr>
+<tr><td>Fuselage Length ( FL ):</td><td><input class = "calculationBox" type = "text" onFocus = "getElementById('pagepicture').src = 'images/fl.jpg';this.style.backgroundColor = '#5F0';" onblur="getElementById('pagepicture').src = 'images/makeshift.jpg';this.style.backgroundColor = 'white';" name = "flength" value = "<?php echo $_SESSION['flength']; ?>"></td></tr>
+<tr><td><hr style = " height:3px;background-color:black;""></td><td><hr style = " height:3px;background-color:black;"></td>
+</tr></table>
+<td valign = "top">&nbsp;
+<img id = "pagepicture" src = 'images/makeshift.jpg' width = '400px' height = '330px'><br><br><center><font color = "red"><b>*<u>NOTE:</u></b></font> Enter same units for all input variables. Use either <br>
+<font color="blue"><b><i>English Unit</i></b></font>  or <font color="blue"><b><i>S.I Unit</i></b></font> for all inputs.</center><br><a href ="?run=clear"><input type = "button" style ="width:195px;height:56px;background : url(images/clear.png) center no-repeat;-moz-border-radius: 10px;-webkit-border-radius-:10px;"></a><input type = "submit"  value ="" style = "width:195px;height:56px;background : url(images/continue.png) center no-repeat;-moz-border-radius: 10px;-webkit-border-radius-:10px;float:right;"></td></tr>
+</table>
+</form>
+
+
+
