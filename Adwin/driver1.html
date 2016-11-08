@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Adwin - GPS Tracker</title>
+	<!-- BEGIN META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Adwin" content="track your vehicles">
+	<!-- END META -->
+	<!-- BEGIN STYLESHEETS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/materialadmin.css" />
+	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/material-design-iconic-font.min.css" />
+	<!-- END STYLESHEETS -->
+</head>
+<body class="menubar-hoverable header-fixed">
+
+	<!-- BEGIN HEADER-->
+	<header id="header" >
+		<div class="headerbar">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="headerbar-left">
+				<ul class="header-nav header-nav-options">
+					<li class="header-nav-brand" >
+						<div class="brand-holder">
+							<a href="tracker.html">
+								<span class="text-lg text-bold text-primary">Adwin Tracker</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+							<i class="fa fa-bars"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="headerbar-right btn-primary-dark">
+				<ul class="header-nav header-nav-options">
+					<li>
+						<!-- Search form -->
+						<form class="navbar-search" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" name="headerSearch" placeholder="Search for an asset">
+							</div>
+							<button type="submit" class="btn btn-icon-toggle ink-reaction"><i class="fa fa-search"></i></button>
+						</form>
+					</li>
+				</ul><!--end .header-nav-options -->
+				<ul class="header-nav header-nav-profile">
+					<li class="dropdown">
+						<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+
+							<span class="profile-info">
+								Solomon Johnson
+								<small>Administrator</small>
+							</span>
+						</a>
+						<ul class="dropdown-menu animation-dock">
+							<li><a href="login.html"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+						</ul><!--end .dropdown-menu -->
+					</li><!--end .dropdown -->
+				</ul><!--end .header-nav-profile -->
+				<ul class="header-nav header-nav-toggle">
+					<li>
+						<a class="btn btn-icon-toggle btn-default" href="#offcanvas-search" data-toggle="offcanvas" data-backdrop="false">
+							<i class="fa fa-th-large"></i>
+						</a>
+					</li>
+				</ul><!--end .header-nav-toggle -->
+			</div><!--end #header-navbar-collapse -->
+		</div>
+	</header>
+	<!-- END HEADER-->
+
+	<!-- BEGIN BASE-->
+	<div id="base">
+
+		<!-- BEGIN OFFCANVAS LEFT -->
+		<div class="offcanvas">
+		</div><!--end .offcanvas-->
+		<!-- END OFFCANVAS LEFT -->
+
+		<!-- BEGIN CONTENT-->
+		<div id="content">
+			<section>
+				<div class="section-body">
+					<div class="row">
+
+						<!-- BEGIN ALERT - REVENUE -->
+						<div class="col-md-3 col-sm-6">
+							<div class="card">
+								<div class="card-body no-padding">
+									<div class="alert alert-callout alert-info no-margin">
+										<h1 class="pull-right text-info"><i class="md md-directions-car"></i></h1>
+										<strong class="text-xl">32 km</strong><br/>
+										<span class="opacity-50">Total Distance</span>
+									</div>
+								</div><!--end .card-body -->
+							</div><!--end .card -->
+						</div><!--end .col -->
+						<!-- END ALERT - REVENUE -->
+
+						<!-- BEGIN ALERT - VISITS -->
+						<div class="col-md-3 col-sm-6">
+							<div class="card">
+								<div class="card-body no-padding">
+									<div class="alert alert-callout alert-danger no-margin">
+										<h1 class="pull-right text-danger"><i class="md md-timer"></i></h1>
+										<strong class="text-xl">5 hours</strong><br/>
+										<span class="opacity-50">Total Time</span>
+									</div>
+								</div><!--end .card-body -->
+							</div><!--end .card -->
+						</div><!--end .col -->
+						<!-- END ALERT - VISITS -->
+
+						<!-- BEGIN ALERT - BOUNCE RATES -->
+						<div class="col-md-3 col-sm-6">
+							<div class="card">
+								<div class="card-body no-padding">
+									<div class="alert alert-callout alert-warning no-margin">
+										<h1 class="pull-right text-warning"><i class="md md-flash-on"></i></h1>
+										<strong class="text-xl">40 km/h</strong><br/>
+										<span class="opacity-50">Average Speed</span>
+									</div>
+								</div><!--end .card-body -->
+							</div><!--end .card -->
+						</div><!--end .col -->
+						<!-- END ALERT - BOUNCE RATES -->
+
+						<!-- BEGIN ALERT - TIME ON SITE -->
+						<div class="col-md-3 col-sm-6">
+							<div class="card">
+								<div class="card-body no-padding">
+									<div class="alert alert-callout alert-success no-margin">
+										<h1 class="pull-right text-success"><i class="md md-remove-red-eye"></i></h1>
+										<strong class="text-xl">3 hours ago</strong><br/>
+										<span class="opacity-50">Last Seen</span>
+									</div>
+								</div><!--end .card-body -->
+							</div><!--end .card -->
+						</div><!--end .col -->
+						<!-- END ALERT - TIME ON SITE -->
+
+					</div><!--end .row -->
+					<div class="container">
+						<h2 class="text-light text-center"><strong>Driver 1 - Log History</strong></h2>
+						<br/>
+
+						<!-- BEGIN RESPONSIVE TIMELINE -->
+						<ul class="timeline collapse-md">
+							<li class="timeline-inverted">
+								<div class="timeline-circ style-primary-dark"></div>
+								<div class="timeline-entry">
+									<div class="card style-default-light">
+										<div class="card-body small-padding">
+											<span class="text-medium">Driver 1 checked in at <a class="text-primary" href="#">Adum</a>
+												from <span class="text-primary">Tech Junction</span></span><br/>
+											<span class="opacity-50">
+												Saturday, Oktober 18, 2014
+											</span>
+											<div class="row">
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Distance: <strong>500m</strong>
+													</span>
+												</div>
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Time: <strong>1 hour ago</strong>
+													</span>
+												</div>
+											</div>
+										</div><!--end .card-body -->
+									</div><!--end .card -->
+								</div><!--end .timeline-entry -->
+							</li>
+							<li>
+								<div class="timeline-circ style-primary-dark"></div>
+								<div class="timeline-entry">
+									<div class="card style-default-light">
+										<div class="card-body small-padding">
+											<span class="text-medium">Driver 1 checked in at <a class="text-primary" href="#">Adum</a>
+												from <span class="text-primary">Tech Junction</span></span><br/>
+											<span class="opacity-50">
+												Saturday, Oktober 18, 2014
+											</span>
+											<div class="row">
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Distance: <strong>500m</strong>
+													</span>
+												</div>
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Time: <strong>1 hour ago</strong>
+													</span>
+												</div>
+											</div>
+										</div><!--end .card-body -->
+									</div><!--end .card -->
+								</div><!--end .timeline-entry -->
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-circ style-primary-dark"></div>
+								<div class="timeline-entry">
+									<div class="card style-default-light">
+										<div class="card-body small-padding">
+											<span class="text-medium">Driver 1 checked in at <a class="text-primary" href="#">Adum</a>
+												from <span class="text-primary">Tech Junction</span></span><br/>
+											<span class="opacity-50">
+												Saturday, Oktober 18, 2014
+											</span>
+											<div class="row">
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Distance: <strong>500m</strong>
+													</span>
+												</div>
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Time: <strong>1 hour ago</strong>
+													</span>
+												</div>
+											</div>
+										</div><!--end .card-body -->
+									</div><!--end .card -->
+								</div><!--end .timeline-entry -->
+							</li>
+							<li>
+								<div class="timeline-circ style-primary-dark"></div>
+								<div class="timeline-entry">
+									<div class="card style-default-light">
+										<div class="card-body small-padding">
+											<span class="text-medium">Driver 1 checked in at <a class="text-primary" href="#">Adum</a>
+												from <span class="text-primary">Tech Junction</span></span><br/>
+											<span class="opacity-50">
+												Saturday, Oktober 18, 2014
+											</span>
+											<div class="row">
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Distance: <strong>500m</strong>
+													</span>
+												</div>
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Time: <strong>1 hour ago</strong>
+													</span>
+												</div>
+											</div>
+										</div><!--end .card-body -->
+									</div><!--end .card -->
+								</div><!--end .timeline-entry -->
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-circ style-primary-dark"></div>
+								<div class="timeline-entry">
+									<div class="card style-default-light">
+										<div class="card-body small-padding">
+											<span class="text-medium">Driver 1 checked in at <a class="text-primary" href="#">Adum</a>
+												from <span class="text-primary">Tech Junction</span></span><br/>
+											<span class="opacity-50">
+												Saturday, Oktober 18, 2014
+											</span>
+											<div class="row">
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Distance: <strong>500m</strong>
+													</span>
+												</div>
+												<div class="col-xs-6 col-sm-4 col-md-4">
+													<span class="opacity-100">
+														Time: <strong>1 hour ago</strong>
+													</span>
+												</div>
+											</div>
+										</div><!--end .card-body -->
+									</div><!--end .card -->
+								</div><!--end .timeline-entry -->
+							</li>
+					</ul>
+					<!-- END RESPONSIVE TIMELINE -->
+
+				</div><!--end .container -->
+			</div><!--end .section-body -->
+		</section>
+		</div><!--end #content-->
+		<!-- END CONTENT -->
+
+		<!-- BEGIN MENUBAR-->
+		<div id="menubar" class="menubar-inverse ">
+			<div class="menubar-fixed-panel">
+				<div>
+					<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>
+				<div class="expanded">
+					<a href="tracker.html">
+						<span class="text-lg text-bold text-primary ">ADWIN&nbsp;TRACKER</span>
+					</a>
+				</div>
+			</div>
+			<div class="menubar-scroll-panel">
+
+				<!-- BEGIN MAIN MENU -->
+				<ul id="main-menu" class="gui-controls">
+
+					<!-- BEGIN DASHBOARD -->
+					<li>
+						<a href="tracker.html" >
+							<div class="gui-icon"><i class="md md-home"></i></div>
+							<span class="title">Home</span>
+						</a>
+					</li><!--end /menu-li -->
+					<!-- BEGIN ASSETS -->
+					<li class="gui-folder active">
+						<a>
+							<div class="gui-icon"><span class="glyphicon glyphicon-tags"></span></div>
+							<span class="title">Assets</span>
+						</a>
+						<!--start submenu -->
+						<ul>
+							<li class="active"><a href="driver1.html" ><span class="title">Driver 1</span></a></li>
+							<li><a href="driver2.html" ><span class="title">Driver 2</span></a></li>
+							<li><a href="driver3.html" ><span class="title">Driver 3</span></a></li>
+							<li><a href="driver4.html" ><span class="title">Drive 4</span></a></li>
+							<li><a href="driver5.html" ><span class="title">Driver 5</span></a></li>
+						</ul><!--end /submenu -->
+					</li><!--end /menu-li -->
+					<!-- END ASSETS -->
+				</ul><!--end .main-menu -->
+				<!-- END MAIN MENU -->
+
+				<div class="menubar-foot-panel">
+					<small class="no-linebreak hidden-folded">
+						<span class="opacity-75">Copyright &copy; 2016</span> <strong>Adwin Technologies</strong>
+					</small>
+				</div>
+			</div><!--end .menubar-scroll-panel-->
+		</div><!--end #menubar-->
+		<!-- END MENUBAR -->
+
+		<!-- BEGIN OFFCANVAS RIGHT -->
+		<div class="offcanvas">
+
+			<!-- BEGIN OFFCANVAS SEARCH -->
+			<div id="offcanvas-search" class="offcanvas-pane width-8">
+				<div class="offcanvas-head">
+					<header class="text-primary">All Fleets</header>
+					<div class="offcanvas-tools">
+						<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+							<i class="md md-close"></i>
+						</a>
+					</div>
+				</div>
+				<div class="offcanvas-body no-padding">
+					<ul class="list ">
+						<li class="tile divider-full-bleed">
+							<div class="tile-content">
+								<div class="tile-text">
+									<strong>Tap on Asset to see log history</strong>
+								</div>
+							</div>
+						</li>
+						<li class="tile">
+							<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+								<div class="tile-icon">
+									<img src="img/avatar9.jpg?1404026744" alt="" />
+								</div>
+								<div class="tile-text">
+									Driver 1
+									<small>Last Seen: Achimota</small>
+								</div>
+							</a>
+						</li><hr>
+						<li class="tile">
+							<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+								<div class="tile-icon">
+									<img src="img/avatar2.jpg?1404026449" alt="" />
+								</div>
+								<div class="tile-text">
+									Driver 2
+									<small>Last Seen: Lapaz</small>
+								</div>
+							</a>
+						</li><hr>
+						<li class="tile">
+							<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+								<div class="tile-icon">
+									<img src="img/avatar2.jpg?1404026449" alt="" />
+								</div>
+								<div class="tile-text">
+									Driver 3
+									<small>Last Seen: Kumasi</small>
+								</div>
+							</a>
+						</li><hr>
+						<li class="tile">
+							<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+								<div class="tile-icon">
+									<img src="img/avatar2.jpg?1404026449" alt="" />
+								</div>
+								<div class="tile-text">
+									Driver 4
+									<small>Last Seen: Nsawam</small>
+								</div>
+							</a>
+						</li><hr>
+						<li class="tile">
+							<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
+								<div class="tile-icon">
+									<img src="img/avatar2.jpg?1404026449" alt="" />
+								</div>
+								<div class="tile-text">
+									Driver 5
+									<small>Last Seen: Tema</small>
+								</div>
+							</a>
+						</li><hr>
+					</ul>
+				</div><!--end .offcanvas-body -->
+			</div><!--end .offcanvas-pane -->
+			<!-- END OFFCANVAS SEARCH -->
+
+			<!-- BEGIN OFFCANVAS CHAT -->
+			<div id="offcanvas-chat" class="offcanvas-pane style-default-light width-12">
+				<div class="offcanvas-head style-default-bright">
+					<header class="text-primary">Logs &nbsp;&nbsp; <strong class="text-primary-dark">Total: 3km</strong></header>
+					<div class="offcanvas-tools">
+						<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+							<i class="md md-close"></i>
+						</a>
+						<a class="btn btn-icon-toggle btn-default-light pull-right" href="#offcanvas-search" data-toggle="offcanvas" data-backdrop="false">
+							<i class="md md-arrow-back"></i>
+						</a>
+					</div>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="timeline collapse-lg timeline-hairline">
+						<li class="timeline-inverted">
+							<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-map-marker"></span></div>
+							<div class="timeline-entry">
+								<div class="card style-default-bright">
+									<div class="card-body small-padding">
+										<span class="text-medium">Driver 1 <a class="text-primary" href="#">was</a> last seen at
+											 <span class="text-primary">Dzorwulu</span></span><br/>
+										<span class="opacity-50">
+											Saturday, October 18, 2016
+										</span>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .timeline-entry -->
+						</li>
+						<li class="timeline-inverted">
+							<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-map-marker"></span></div>
+							<div class="timeline-entry">
+								<div class="card style-default-bright">
+									<div class="card-body small-padding">
+										<span class="text-medium">Driver 1 <a class="text-primary" href="#">was</a> last seen at
+											 <span class="text-primary">Achimota</span></span><br/>
+										<span class="opacity-50">
+											Saturday, March 18, 2016
+										</span>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .timeline-entry -->
+						</li>
+					</ul>
+				</div><!--end .offcanvas-body -->
+			</div><!--end .offcanvas-pane -->
+			<!-- END OFFCANVAS CHAT -->
+
+		</div><!--end .offcanvas-->
+		<!-- END OFFCANVAS RIGHT -->
+
+	</div><!--end #base-->
+	<!-- END BASE -->
+
+	<!-- BEGIN JAVASCRIPT -->
+	<script src="js/libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+	<script src="js/libs/spin.js/spin.min.js"></script>
+	<script src="js/libs/autosize/jquery.autosize.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzpFKmd5cucnGUrYiUzaIouvmhgClXArw&callback=initMap"></script>
+	<script src="js/libs/gmaps/gmaps.js"></script>
+	<script src="js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+	<script src="js/core/source/App.js"></script>
+	<script src="js/core/source/AppNavigation.js"></script>
+	<script src="js/core/source/AppOffcanvas.js"></script>
+	<script src="js/core/source/AppCard.js"></script>
+	<script src="js/core/source/AppForm.js"></script>
+	<script src="js/core/source/AppNavSearch.js"></script>
+	<script src="js/core/source/AppVendor.js"></script>
+	<script src="js/core/demo/Demo.js"></script>
+	<script src="js/core/demo/DemoPageMaps.js"></script>
+	<!-- END JAVASCRIPT -->
+
+</body>
+</html>
