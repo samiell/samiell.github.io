@@ -92,7 +92,7 @@
 			<section>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-8 col-xs-8 col-xs-offset-1 card">
-						<select id="select2" name="select2" class="form-control" style="height:55px;">
+						<select id="select2" name="select2" class="form-control" style="height:55px;" class="btn btn-floating-action">
 															<option value="">Locate an Asset</option>
 															<option value="30">Driver 1</option>
 															<option value="40">Driver 2</option>
@@ -137,7 +137,22 @@
 							<span class="title">Home</span>
 						</a>
 					</li><!--end /menu-li -->
-
+					<!-- BEGIN ASSETS -->
+					<li class="gui-folder">
+						<a>
+							<div class="gui-icon"><span class="glyphicon glyphicon-tags"></span></div>
+							<span class="title">Assets</span>
+						</a>
+						<!--start submenu -->
+						<ul>
+							<li><a href="driver1.html" ><span class="title">Driver 1</span></a></li>
+							<li><a href="driver2.html" ><span class="title">Driver 2</span></a></li>
+							<li><a href="driver3.html" ><span class="title">Driver 3</span></a></li>
+							<li><a href="driver4.html" ><span class="title">Drive 4</span></a></li>
+							<li><a href="driver5.html" ><span class="title">Driver 5</span></a></li>
+						</ul><!--end /submenu -->
+					</li><!--end /menu-li -->
+					<!-- END ASSETS -->
 				</ul><!--end .main-menu -->
 				<!-- END MAIN MENU -->
 
@@ -235,7 +250,7 @@
 			<!-- BEGIN OFFCANVAS CHAT -->
 			<div id="offcanvas-chat" class="offcanvas-pane style-default-light width-12">
 				<div class="offcanvas-head style-default-bright">
-					<header class="text-primary">Logs</header>
+					<header class="text-primary">Logs &nbsp;&nbsp; <strong class="text-primary-dark">Total: 3km</strong></header>
 					<div class="offcanvas-tools">
 						<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
 							<i class="md md-close"></i>
