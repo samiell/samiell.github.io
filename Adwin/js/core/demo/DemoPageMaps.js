@@ -109,7 +109,7 @@
 
 		var pl = routeMap.drawPolyline({
 		  path: path,
-		  strokeColor: '#76ff03',
+		  strokeColor: '#70df03',
 		  strokeOpacity: 1,
 		  strokeWeight: 10
 		});
